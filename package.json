@@ -1,5 +1,5 @@
 {
-  "name": "sanctuary-choir",
+  "name": "coro-espanol",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/igorcweb/sanctuary-choir.git"
+    "url": "git+https://github.com/igorcweb/coro-espanol.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/igorcweb/sanctuary-choir/issues"
+    "url": "https://github.com/igorcweb/coro-espanol/issues"
   },
-  "homepage": "https://igorcweb.github.io/sanctuary-choir",
+  "homepage": "https://igorcweb.github.io/coro-espanol",
   "devDependencies": {
     "gh-pages": "^2.2.0"
   }

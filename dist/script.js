@@ -27,3 +27,11 @@ $("a.pascua-5").on("click", function () {
   $(".music").addClass("d-none");
   $("#pascua-5").removeClass("d-none");
 });
+
+$("a.pascua-6").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#pascua-6").removeClass("d-none");
+});
+

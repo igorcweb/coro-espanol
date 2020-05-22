@@ -35,3 +35,10 @@ $("a.pascua-6").on("click", function () {
   $("#pascua-6").removeClass("d-none");
 });
 
+$("a.ascencion").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#ascencion").removeClass("d-none");
+});
+

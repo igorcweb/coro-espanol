@@ -42,3 +42,11 @@ $("a.ascencion").on("click", function () {
   $("#ascencion").removeClass("d-none");
 });
 
+$("a.pentecostes").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#pentecostes").removeClass("d-none");
+});
+
+

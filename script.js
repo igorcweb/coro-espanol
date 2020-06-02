@@ -49,4 +49,12 @@ $("a.pentecostes").on("click", function () {
   $("#pentecostes").removeClass("d-none");
 });
 
+$("a.trinidad").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#trinidad").removeClass("d-none");
+});
+
+
 

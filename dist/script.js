@@ -56,5 +56,13 @@ $("a.trinidad").on("click", function () {
   $("#trinidad").removeClass("d-none");
 });
 
+$("a.ota-13").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#ota-13").removeClass("d-none");
+});
+
+
 
 

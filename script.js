@@ -62,6 +62,12 @@ $("a.ota-13").on("click", function () {
   $(".music").addClass("d-none");
   $("#ota-13").removeClass("d-none");
 });
+$("a.ota-14").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#ota-14").removeClass("d-none");
+});
 
 
 

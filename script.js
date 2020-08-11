@@ -101,6 +101,21 @@ $("a.ota-18").on("click", function () {
   $("#ota-18").removeClass("d-none");
 });
 
+$("a.conmemorativo").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#conmemorativo").removeClass("d-none");
+});
+
+$("a.asuncion").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#asuncion").removeClass("d-none");
+});
+
+
 
 
 

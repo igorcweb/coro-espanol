@@ -114,6 +114,12 @@ $("a.asuncion").on("click", function () {
   $(".music").addClass("d-none");
   $("#asuncion").removeClass("d-none");
 });
+$("a.ota-20").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#ota-20").removeClass("d-none");
+});
 
 
 

@@ -126,6 +126,18 @@ $("a.ota-21").on("click", function () {
   $(".music").addClass("d-none");
   $("#ota-21").removeClass("d-none");
 });
+$("a.ota-25").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#ota-25").removeClass("d-none");
+});
+$("a.ota-27").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#ota-27").removeClass("d-none");
+});
 
 
 

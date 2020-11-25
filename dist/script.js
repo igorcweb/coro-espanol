@@ -170,6 +170,20 @@ $("a.ota-32").on("click", function () {
   $("#ota-32").removeClass("d-none");
 });
 
+$("a.a-1").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#a-1").removeClass("d-none");
+});
+
+$("a.gracias").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#gracias").removeClass("d-none");
+});
+
 
 
 

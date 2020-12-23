@@ -16,6 +16,12 @@ $("a.misa").on("click", function () {
   $(".music").addClass("d-none");
   $("#misa").removeClass("d-none");
 });
+$("a.sf").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#sf").removeClass("d-none");
+});
 
 
 

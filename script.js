@@ -10,6 +10,14 @@ $("a.miercoles").on("click", function () {
   $(".music").addClass("d-none");
   $("#miercoles").removeClass("d-none");
 });
+$("a.cuarezma-1").on("click", function () {
+  $("a").removeClass("active");
+  $(this).addClass("active");
+  $(".music").addClass("d-none");
+  $("#cuarezma-1").removeClass("d-none");
+});
+
+
 
 
 

@@ -4,11 +4,11 @@ $("a.misa").on("click", function () {
   $(".music").addClass("d-none");
   $("#misa").removeClass("d-none");
 });
-$("a.ramos").on("click", function () {
+$("a.vs").on("click", function () {
   $("a").removeClass("active");
   $(this).addClass("active");
   $(".music").addClass("d-none");
-  $("#ramos").removeClass("d-none");
+  $("#vs").removeClass("d-none");
 });
 
 

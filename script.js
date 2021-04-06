@@ -4,17 +4,11 @@ $("a.misa").on("click", function () {
   $(".music").addClass("d-none");
   $("#misa").removeClass("d-none");
 });
-$("a.vs").on("click", function () {
+$("a.p2").on("click", function () {
   $("a").removeClass("active");
   $(this).addClass("active");
   $(".music").addClass("d-none");
-  $("#vs").removeClass("d-none");
-});
-$("a.dp").on("click", function () {
-  $("a").removeClass("active");
-  $(this).addClass("active");
-  $(".music").addClass("d-none");
-  $("#dp").removeClass("d-none");
+  $("#p2").removeClass("d-none");
 });
 
 

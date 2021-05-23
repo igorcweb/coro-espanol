@@ -16,7 +16,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
+  <script src="https://use.fontawesome.com/e5cccb268e.js"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
@@ -28,8 +28,10 @@
 <body>
   <h1 class="text-center text-sm-left ml-sm-3 mb-4">Coro Español</h1>
   <div class="buttons mb-2 text-center text-sm-left ">
-    <a class="btn btn-lg btn-danger mb-3 ml-4 misa text-white shadow-sm">La Misa</a>
-    <a class="btn btn-lg btn-danger mb-3 ml-4 pentecostes text-white shadow-sm active" style="width: fit-content">Pentecostés</a>
+    <!-- <a class="btn btn-lg btn-danger mb-3 ml-4 misa text-white shadow-sm">La Misa</a>
+    <a class="btn btn-lg btn-danger mb-3 ml-4 pentecostes text-white shadow-sm active" style="width: fit-content">Pentecostés</a> -->
+    <a class="selection btn btn-lg btn-danger mb-3 mx-4 mb-4 misa text-white  shadow-sm" style="width: fit-content"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none" aria-hidden="true"></i>La Misa</a>
+    <a class="selection btn btn-lg btn-danger mb-3 mx-4 mb-4 trinidad text-white  shadow-sm active" style="width: fit-content"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none" aria-hidden="true"></i>La Trinidad</a>
     <!-- <a class="btn btn-lg btn-danger mb-3 ml-4 boda text-white shadow-sm" style="width: fit-content">Boda</a> -->
   </div>
   <!-- La Misa -->
@@ -139,6 +141,56 @@
           </h4>
           <audio controls title="Iglesia Peregrina" class="mb-2">
             <source src="./audio/pentecostes/iglesia-peregrina.m4a" type="audio/mp4" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+    </div>
+      <!-- Trinidad -->
+    <div class="col">
+      <div class="trinidad music mb-5" id="trinidad">
+        <div class="mb-4">
+          <h4 class="ml-4 ml-sm-2">
+            Gloria Trinitario
+          </h4>
+          <audio controls title="Gloria Trinitario" class="mb-2">
+            <source src="./audio/Trinidad/gloria-trinitario.m4a" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="mb-4">
+          <h4 class="ml-4 ml-sm-2">
+            Salmo 32: Dichoso el Pueblo
+          </h4>
+          <audio controls title="Salmo 103: Envía Tu Espíritu, Señor" class="mb-2">
+            <source src="./audio/Trinidad/salmo-32-dichoso-el-pueblo.m4a" type="audio/mp4" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="mb-4">
+          <h4 class="ml-4 ml-sm-2">
+            Himno a la Trinidad
+          </h4>
+          <audio controls title="Himno a la Trinidad" class="mb-2">
+            <source src="./audio/Trinidad/himno-a-la-trinidad.m4a" type="audio/mp4" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="mb-4">
+          <h4 class="ml-4 ml-sm-2">
+            El Pan de la Vida
+          </h4>
+          <audio controls title="El Pan de la Vida">
+            <source src="./audio/Trinidad/el-pan-de-al-vida.m4a" type="audio/mp4" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="mb-4">
+          <h4 class="ml-4 ml-sm-2">
+            Alabaré
+          </h4>
+          <audio controls title="Alabaré" class="mb-2">
+            <source src="./audio/Trinidad/alabare.m4a" type="audio/mp4" />
             Your browser does not support the audio element.
           </audio>
         </div>

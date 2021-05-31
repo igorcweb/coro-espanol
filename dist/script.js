@@ -37,13 +37,10 @@ $('.selection').on('click', function () {
   $('.selection').find('.fa-check').addClass('d-none')
   activate();
   $(".music").addClass("d-none");
-  if ($(this).hasClass('pentecostes')) {
-    $("#pentecostes").removeClass("d-none");
+  if ($(this).hasClass('corpus')) {
+    $("#corpus").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
-  }
-  else if ($(this).hasClass('trinidad')) {
-    $("#trinidad").removeClass("d-none");
   }
 })
 

@@ -37,8 +37,8 @@ $('.selection').on('click', function () {
   $('.selection').find('.fa-check').addClass('d-none')
   activate();
   $(".music").addClass("d-none");
-  if ($(this).hasClass('corpus')) {
-    $("#corpus").removeClass("d-none");
+  if ($(this).hasClass('otb11')) {
+    $("#otb11").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
   }

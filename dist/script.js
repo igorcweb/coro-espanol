@@ -41,8 +41,8 @@ $('.selection').on('click', function () {
     $("#otb13").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
-  } else if ($(this).hasClass('otb12')) {
-    $("#otb12").removeClass("d-none");
+  } else if ($(this).hasClass('otb14')) {
+    $("#otb14").removeClass("d-none");
   }
 })
 

@@ -1,24 +1,3 @@
-// $("a.misa").on("click", function () {
-//   $("a").removeClass("active");
-//   $(this).addClass("active");
-//   $(".music").addClass("d-none");
-//   $("#misa").removeClass("d-none");
-// });
-// $("a.pentecostes").on("click", function () {
-//   $("a").removeClass("active");
-//   $(this).addClass("active");
-//   $(".music").addClass("d-none");
-//   $("#pentecostes").removeClass("d-none");
-// });
-// $("a.boda").on("click", function () {
-//   $("a").removeClass("active");
-//   $(this).addClass("active");
-//   $(".music").addClass("d-none");
-//   $("#boda").removeClass("d-none");
-// });
-
-
-
 function activate() {
   $.each($('.selection'), function (i, selection) {
     if ($(selection).hasClass('active')) {
@@ -41,8 +20,8 @@ $('.selection').on('click', function () {
     $("#otb13").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
-  } else if ($(this).hasClass('otb14')) {
-    $("#otb14").removeClass("d-none");
+  } else if ($(this).hasClass('otb15')) {
+    $("#otb15").removeClass("d-none");
   }
 })
 

@@ -18,25 +18,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <script src="https://use.fontawesome.com/e5cccb268e.js"></script>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="icon" href="./images/coro-icon.jpg" />
   <link rel="stylesheet" href="./style.css" />
   <title>Coro Español</title>
 </head>
 
 <body>
-  <h1 class="text-center text-sm-left ml-sm-3 mb-4">Coro Español</h1>
-  <div class="buttons mb-2 text-center text-sm-left ">
-    <a class="selection btn btn-lg btn-danger mb-3 mx-4 mb-4 misa text-white  shadow-sm" style="width: fit-content"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none" aria-hidden="true"></i>La Misa</a>
-    <a class="selection btn btn-lg btn-danger mb-3 mx-4 mb-4 otb14 text-white  shadow-sm active" style="width: fit-content"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none" aria-hidden="true"></i>Tiempo Ordinario XIV</a>
-    <!-- <a class="btn btn-lg btn-danger mb-3 ml-4 boda text-white shadow-sm" style="width: fit-content">Boda</a> -->
+  <h1 class="text-center text-sm-start mb-4">Coro Español</h1>
+  <div class="buttons mb-2 d-flex gap-4  flex-wrap justify-content-center justify-content-sm-start">
+    <a class="selection btn btn-lg btn-success misa text-white  shadow-sm" style="width: fit-content"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none" aria-hidden="true"></i>La Misa</a>
+    <a class="selection btn btn-lg btn-success otb15 text-white  shadow-sm active" style="width: fit-content"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none" aria-hidden="true"></i>Tiempo Ordinario XV</a>
+    <!-- <a class="btn btn-lg btn-success boda text-white shadow-sm" style="width: fit-content">Boda</a> -->
   </div>
   <!-- La Misa -->
-  <div class="col">
+  <div class="col mt-4">
     <div class="misa music mb-5 d-none" id="misa">
       <div class="mb-4">
-        <h4 class="ml-4 ml-sm-2">
+        <h4 class="ms-4 ms-sm-2">
           Señor Ten Piedad y Gloria
         </h4>
         <audio controls title="Señor Ten Piedad y Gloria" class="mb-2">
@@ -45,7 +44,7 @@
         </audio>
       </div>
       <div class="mb-4">
-        <h4 class="ml-4 ml-sm-2">
+        <h4 class="ms-4 ms-sm-2">
           Santo
         </h4>
 
@@ -55,7 +54,7 @@
         </audio>
       </div>
       <div class="mb-4">
-        <h4 class="ml-4 ml-sm-2">
+        <h4 class="ms-4 ms-sm-2">
          Anunciamos Tu Muerte
         </h4>
 
@@ -65,7 +64,7 @@
         </audio>
       </div>
       <div class="mb-4">
-        <h4 class="ml-4 ml-sm-2">
+        <h4 class="ms-4 ms-sm-2">
           Amen
         </h4>
         <audio controls title="Amen" class="mb-2">
@@ -74,7 +73,7 @@
         </audio>
       </div>
       <div class="mb-4">
-        <h4 class="ml-4 ml-sm-2">
+        <h4 class="ms-4 ms-sm-2">
          Cordero de Dios
         </h4>
         <audio controls title="Cordero de Dios" class="mb-2">
@@ -86,51 +85,51 @@
   </div>
 
 
-    <!-- OTB14 -->
+    <!-- OTB15 -->
   <div class="col">
-    <div class="otb14 music mb-5" id="otb14">
+    <div class="otb15 music mb-5" id="otb15">
       <div class="mb-4">
-        <h4 class="ml-4 ml-sm-2">
-          Dios Nos Convoca
+        <h4 class="ms-4 ms-sm-2">
+          Qué Alegría Cuando Me Dijeron
         </h4>
-        <audio controls title="Dios Nos Convoca" class="mb-2">
-          <source src="./audio/otb14/dis-nos-convoca.m4a" />
+        <audio controls title="Qué Alegría Cuando Me Dijeron" class="mb-2">
+          <source src="./audio/otb15/que-alegria-cuando-me-dijeron.m4a" />
           Your browser does not support the audio element.
         </audio>
       </div>
       <div class="mb-4">
-        <h4 class="ml-4 ml-sm-2">
-          Salmo 122: Están Nuestros Ojos
+        <h4 class="ms-4 ms-sm-2">
+          Salmo 84: Muéstranos, Señor
         </h4>
-        <audio controls title="Salmo 122: Están Nuestros Ojos" class="mb-2">
-          <source src="./audio/otb14/salmo-122-estan-nuestros-ojos.m4a" type="audio/mp4" />
+        <audio controls title="Salmo 84: Muéstranos, Señor" class="mb-2">
+          <source src="./audio/otb15/salmo-84-muestranos-senor.m4a" type="audio/mp4" />
           Your browser does not support the audio element.
         </audio>
       </div>
       <div class="mb-4">
-        <h4 class="ml-4 ml-sm-2">
-          Como Busca la Cierva
+        <h4 class="ms-4 ms-sm-2">
+          Oye el Llamado
         </h4>
-        <audio controls title="Como Busca la Cierva" class="mb-2">
-          <source src="./audio/otb14/como-busca-la-cierva.m4a" type="audio/mp4" />
+        <audio controls title="Oye el Llamado" class="mb-2">
+          <source src="./audio/otb15/oye-el-llamado.m4a" type="audio/mp4" />
           Your browser does not support the audio element.
         </audio>
       </div>
       <div class="mb-4">
-        <h4 class="ml-4 ml-sm-2">
-          A Comer Tu Pan
+        <h4 class="ms-4 ms-sm-2">
+          Pescador de Hombres
         </h4>
-        <audio controls title="A Comer Tu Pan">
-          <source src="./audio/otb14/a-comer-tu-pan.m4a" type="audio/mp4" />
+        <audio controls title="Pescador de Hombres">
+          <source src="./audio/otb15/pescador-de-hombres.m4a" type="audio/mp4" />
           Your browser does not support the audio element.
         </audio>
       </div>
       <div class="mb-4">
-        <h4 class="ml-4 ml-sm-2">
-          Vayan y Proclamen la Buena Nueva
+        <h4 class="ms-4 ms-sm-2">
+          ¡Qué Detalle, Senor! 
         </h4>
-        <audio controls title="Vayan y Proclamen la Buena Nueva" class="mb-2">
-          <source src="./audio/otb14/vayan-y-proclamen-la-buena-nueva.m4a" type="audio/mp4" />
+        <audio controls title="¡Qué Detalle, Senor! " class="mb-2">
+          <source src="./audio/otb15/que-detalle-senor.m4a" type="audio/mp4" />
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -141,7 +140,7 @@
     <div class="col">
       <div class="boda music mb-5 d-none" id="boda">
         <div class="mb-4">
-          <h4 class="ml-4 ml-sm-2">
+          <h4 class="ms-4 ms-sm-2">
             Amar 
           </h4>
           <audio controls title="Amar" class="mb-2">
@@ -150,7 +149,7 @@
           </audio>
         </div>
         <div class="mb-4">
-          <h4 class="ml-4 ml-sm-2">
+          <h4 class="ms-4 ms-sm-2">
             Salmo 127: Dichosos los que temen al Señor
           </h4>
           <audio controls title="Salmo 117: Éste Es el Día" class="mb-2">
@@ -159,7 +158,7 @@
           </audio>
         </div>
         <div class="mb-4">
-          <h4 class="ml-4 ml-sm-2">
+          <h4 class="ms-4 ms-sm-2">
             Oh Señor, Delante de Ti
           </h4>
           <audio controls title="Oh Señor, Delante de Ti" class="mb-2">
@@ -168,7 +167,7 @@
           </audio>
         </div>
         <div class="mb-4">
-          <h4 class="ml-4 ml-sm-2">
+          <h4 class="ms-4 ms-sm-2">
             El Amor Nunca Pasará
           </h4>
           <audio controls title="El Amor Nunca Pasará">
@@ -177,7 +176,7 @@
           </audio>
         </div>
         <div class="mb-4">
-          <h4 class="ml-4 ml-sm-2">
+          <h4 class="ms-4 ms-sm-2">
             Maria
           </h4>
           <audio controls title="Maria" class="mb-2">
@@ -186,7 +185,7 @@
           </audio>
         </div>
         <div class="mb-4">
-          <h4 class="ml-4 ml-sm-2">
+          <h4 class="ms-4 ms-sm-2">
             Vaso Nuevo
           </h4>
           <audio controls title="Vaso Nuevo">
@@ -201,14 +200,8 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="./script.js"></script>
 </body>
 

@@ -28,11 +28,15 @@
 <body>
   <h1 class="text-center text-sm-start mb-4">Coro Español</h1>
   <div class="buttons mb-2 d-flex gap-4  flex-wrap justify-content-center justify-content-sm-start">
-    <a class="selection btn btn-lg btn-success misa text-white shadow-sm" style="width: fit-content"><i
+    <a class="selection btn btn-lg btn-success misa text-white shadow-sm mb-1" style="width: fit-content"><i
         class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none" aria-hidden="true"></i>La
       Misa</a>
 
-    <a class="selection btn btn-lg btn-success as text-white shadow-sm active" style="width: fit-content"><i
+    <a class="selection btn btn-lg btn-success otb19 text-white shadow-sm active mb-1" style="width: fit-content"><i
+        class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none" aria-hidden="true"></i>Tiempo
+      Ordinario XIX</a>
+
+    <a class="selection btn btn-lg btn-success as text-white shadow-sm mb-1" style="width: fit-content"><i
         class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none"
         aria-hidden="true"></i>Asunción</a>
   </div>
@@ -89,9 +93,60 @@
     </div>
   </div>
 
+  <!-- OTB19 -->
+  <div class="col m">
+    <div class="otb19 music mb-5" id="otb19">
+      <div class="mb-4">
+        <h4 class="ms-4 ms-sm-2">
+          Dios Nos Convoca
+        </h4>
+        <audio controls title="Dios Nos Convoca" class="mb-2">
+          <source src="./audio/otb19/dis-nos-convoca.m4a" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="mb-4">
+        <h4 class="ms-4 ms-sm-2">
+          Salmo 33: Gusten y Vean - #176
+        </h4>
+        <audio controls title="Salmo 33: Gusten y Vean - #176" class="mb-2">
+          <source src="./audio/otb19/salmo-33-gusteny-vean.m4a" type="audio/mp4" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="mb-4">
+        <h4 class="ms-4 ms-sm-2">
+          Amemonos de Corazon
+        </h4>
+        <audio controls title="Amemonos de Corazon" class="mb-2">
+          <source src="./audio/otb19/amemonos-de-corazon.m4a" type="audio/mp4" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="mb-4">
+        <h4 class="ms-4 ms-sm-2">
+          Tomad y Comed
+        </h4>
+        <audio controls title="Tomad y Comed">
+          <source src="./audio/otb19/tomad-y-comed.m4a" type="audio/mp4" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="mb-4">
+        <h4 class="ms-4 ms-sm-2">
+          Danos un Corazón
+        </h4>
+        <audio controls title="Danos un Corazón" class="mb-2">
+          <source src="./audio/otb19/danos-un-corazon.m4a" type="audio/mp4" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+
   <!-- Asumpcion -->
   <div class="col">
-    <div class="as music mb-5" id="as">
+    <div class="as music mb-5 d-none" id="as">
       <div class="mb-4">
         <h4 class="ms-4 ms-sm-2">
           Dios Te Salve, María

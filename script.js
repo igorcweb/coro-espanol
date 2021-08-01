@@ -20,8 +20,8 @@ $('.selection').on('click', function () {
     $("#as").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
-  } else if ($(this).hasClass('otb17')) {
-    $("#otb17").removeClass("d-none");
+  } else if ($(this).hasClass('otb19')) {
+    $("#otb19").removeClass("d-none");
   }
   $('audio').each(function () {
     $(this)[0].pause()

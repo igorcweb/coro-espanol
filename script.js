@@ -20,8 +20,8 @@ $('.selection').on('click', function () {
     $("#otb26").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
-  } else if ($(this).hasClass('otb25')) {
-    $("#otb25").removeClass("d-none");
+  } else if ($(this).hasClass('otb27')) {
+    $("#otb27").removeClass("d-none");
   }
   $('audio').each(function () {
     $(this)[0].pause()
@@ -65,28 +65,28 @@ const misa = [
   },
 ]
 
-const otb25Div = $('.otb25.music');
-const otb25 = [
+const otb27Div = $('.otb27.music');
+const otb27 = [
   {
-    title: 'Vienen con Alegría',
-    file: './audio/otb-25/vienen-con-alegria.m4a'
+    title: 'Amor de Dios',
+    file: './audio/otb-27/amor-de-dios.m4a'
   },
   {
-    title: 'Salmo 53: El Señor es quien me ayuda',
-    file: './audio/otb-25/salmo-53-el-senor-es-quienen-me-ayuda.m4a'
+    title: 'Salmo 127: El Señor Nos Bendiga',
+    file: './audio/otb-27/salmo-127-el-senor-nos-bendiga.m4a'
   },
   {
-    title: 'Entre Tus Manos',
-    file: './audio/otb-25/entre-tus-manos.m4a'
+    title: 'El Amor Nunca Pasará ',
+    file: './audio/otb-27/el-amor-nunca-pasara.m4a'
   },
   {
-    title: 'Espero en Ti, Señor',
-    file: './audio/otb-25/espero-en-ti-senor.m4a'
+    title: 'Canto de Toda Criatura',
+    file: './audio/otb-27/canto-de-toda-criatura.m4a'
   },
 
   {
-    title: 'Id y Enseñad',
-    file: './audio/otb-25/id-y-ensenad.m4a'
+    title: 'Yo Canto Amor',
+    file: './audio/otb-27/yo-canto-amor.m4a'
   }
 ]
 
@@ -131,7 +131,7 @@ function populateTracks(track, div) {
 }
 
 populateTracks(misa, misaDiv);
-populateTracks(otb25, otb25Div);
+populateTracks(otb27, otb27Div);
 populateTracks(otb26, otb26Div);
 
 $('.audio-control').on("play", function () {

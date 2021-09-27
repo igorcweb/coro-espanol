@@ -16,8 +16,8 @@ $('.selection').on('click', function () {
   $('.selection').find('.fa-check').addClass('d-none')
   activate();
   $(".music").addClass("d-none");
-  if ($(this).hasClass('otb26')) {
-    $("#otb26").removeClass("d-none");
+  if ($(this).hasClass('otb28')) {
+    $("#otb28").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
   } else if ($(this).hasClass('otb27')) {
@@ -90,27 +90,27 @@ const otb27 = [
   }
 ]
 
-const otb26Div = $('.otb26.music');
-const otb26 = [
+const otb28Div = $('.otb28.music');
+const otb28 = [
   {
-    title: 'Ven al Banquete',
-    file: './audio/otb-26/ven-al-banquete.m4a'
+    title: 'Dios Nos Convoca',
+    file: './audio/otb-28/dios-nos-convoca.m4a'
   },
   {
-    title: 'Salmo 18: Señor, Tú Tienes Palabras',
-    file: './audio/otb-26/salmo-18-senor-tu-tienes-palabras.m4a'
+    title: 'Salmo 89: Sacianos Señor',
+    file: './audio/otb-28/salmo-89-sacianos-senor.m4a'
   },
   {
-    title: 'Todos Esperamos de Ti',
-    file: './audio/otb-26/todos-esperamos-de-ti.m4a'
+    title: 'Bienaventurados',
+    file: './audio/otb-28/bienaventurados.m4a'
   },
   {
-    title: 'Envía Tu Espíritu',
-    file: './audio/otb-26/envia-tu-espiritu.m4a'
+    title: 'Pescador de Hombres',
+    file: './audio/otb-28/pescador-de-hombres.m4a'
   },
   {
-    title: 'Grita, Profeta',
-    file: './audio/otb-26/grita-profeta.m4a'
+    title: 'Ven y Sígueme',
+    file: './audio/otb-28/ven-y-sigueme.m4a'
   },
 ]
 
@@ -132,7 +132,7 @@ function populateTracks(track, div) {
 
 populateTracks(misa, misaDiv);
 populateTracks(otb27, otb27Div);
-populateTracks(otb26, otb26Div);
+populateTracks(otb28, otb28Div);
 
 $('.audio-control').on("play", function () {
   $('.audio-control').not(this).each(function (index, audio) {

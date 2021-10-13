@@ -16,8 +16,8 @@ $('.selection').on('click', function () {
   $('.selection').find('.fa-check').addClass('d-none')
   activate();
   $(".music").addClass("d-none");
-  if ($(this).hasClass('otb28')) {
-    $("#otb28").removeClass("d-none");
+  if ($(this).hasClass('otb30')) {
+    $("#otb30").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
   } else if ($(this).hasClass('otb29')) {
@@ -78,22 +78,22 @@ const otb29 = [
   }
 ]
 
-const otb28Div = $('.otb28.music');
-const otb28 = [
+const otb30Div = $('.otb30.music');
+const otb30 = [
   {
-    title: 'Dios Nos Convoca',
+    title: 'Cristo Libertador',
   },
   {
-    title: 'Salmo 89: Sacianos Señor',
+    title: 'Salmo 125: El Señor Ha Estado Grande con Nosotros',
   },
   {
-    title: 'Bienaventurados',
+    title: 'Abre Mis Ojos',
   },
   {
-    title: 'Pescador de Hombres',
+    title: 'Renuévanos, Señor',
   },
   {
-    title: 'Ven y Sígueme',
+    title: 'El Señor Es Mi Fuerza',
   },
 ]
 
@@ -109,6 +109,7 @@ function populateTracks(track, div, folder) {
       .replaceAll('ñ', 'n')
       .replaceAll('í', 'i')
       .replaceAll('ó', 'o')
+      .replaceAll('é', 'e')
       .replaceAll('ú', 'u');
     const file = `./audio/${folder}/${fileName}.m4a`;
     $(div).append(`
@@ -127,7 +128,7 @@ function populateTracks(track, div, folder) {
 
 populateTracks(misa, misaDiv, 'partes-de-la-misa');
 populateTracks(otb29, otb29Div, 'otb-29');
-populateTracks(otb28, otb28Div, 'otb-28');
+populateTracks(otb30, otb30Div, 'otb-30');
 
 $('.audio-control').on("play", function () {
   $('.audio-control').not(this).each(function (index, audio) {

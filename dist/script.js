@@ -20,8 +20,8 @@ $('.selection').on('click', function () {
     $("#otb30").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
-  } else if ($(this).hasClass('otb29')) {
-    $("#otb29").removeClass("d-none");
+  } else if ($(this).hasClass('otb31')) {
+    $("#otb31").removeClass("d-none");
   }
   $('audio').each(function () {
     $(this)[0].pause()
@@ -97,6 +97,27 @@ const otb30 = [
   },
 ]
 
+const otb31Div = $('.otb31.music');
+const otb31 = [
+  {
+    title: 'Tu Palabra Me Da Vida',
+  },
+  {
+    title: 'Salmo 17: Yo Te Amo Señor',
+  },
+  {
+    title: 'Mi Dios y Mi Todo',
+  },
+  {
+    title: 'Señor, Te Adoramos',
+  },
+  {
+    title: 'Yo Canto Amor',
+  },
+]
+
+
+
 function populateTracks(track, div, folder) {
   $.each(track, (i, track) => {
     let fileName = track.title
@@ -127,8 +148,8 @@ function populateTracks(track, div, folder) {
 }
 
 populateTracks(misa, misaDiv, 'partes-de-la-misa');
-populateTracks(otb29, otb29Div, 'otb-29');
 populateTracks(otb30, otb30Div, 'otb-30');
+populateTracks(otb31, otb31Div, 'otb-31');
 
 $('.audio-control').on("play", function () {
   $('.audio-control').not(this).each(function (index, audio) {

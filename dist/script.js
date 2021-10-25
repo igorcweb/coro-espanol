@@ -16,8 +16,8 @@ $('.selection').on('click', function () {
   $('.selection').find('.fa-check').addClass('d-none')
   activate();
   $(".music").addClass("d-none");
-  if ($(this).hasClass('otb30')) {
-    $("#otb30").removeClass("d-none");
+  if ($(this).hasClass('todosSantos')) {
+    $("#todosSantos").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
   } else if ($(this).hasClass('otb31')) {
@@ -78,22 +78,22 @@ const otb29 = [
   }
 ]
 
-const otb30Div = $('.otb30.music');
-const otb30 = [
+const todosSantosDiv = $('.todosSantos.music');
+const todosSantos = [
   {
-    title: 'Cristo Libertador',
+    title: 'Qué Alegría Cuando Me Dijeron',
   },
   {
-    title: 'Salmo 125: El Señor Ha Estado Grande con Nosotros',
+    title: 'Salmo 23: Ésta Es la Raza',
   },
   {
-    title: 'Abre Mis Ojos',
+    title: 'Pueblo Santo y Elegido',
   },
   {
-    title: 'Renuévanos, Señor',
+    title: 'Vengan a Mí los Agobiados',
   },
   {
-    title: 'El Señor Es Mi Fuerza',
+    title: 'Un Pueblo que Camina',
   },
 ]
 
@@ -148,7 +148,7 @@ function populateTracks(track, div, folder) {
 }
 
 populateTracks(misa, misaDiv, 'partes-de-la-misa');
-populateTracks(otb30, otb30Div, 'otb-30');
+populateTracks(todosSantos, todosSantosDiv, 'todosSantos');
 populateTracks(otb31, otb31Div, 'otb-31');
 
 $('.audio-control').on("play", function () {

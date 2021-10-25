@@ -22,6 +22,8 @@ $('.selection').on('click', function () {
     $("#misa").removeClass("d-none");
   } else if ($(this).hasClass('otb31')) {
     $("#otb31").removeClass("d-none");
+  } else if ($(this).hasClass('otb32')) {
+    $("#otb32").removeClass("d-none");
   }
   $('audio').each(function () {
     $(this)[0].pause()
@@ -59,22 +61,22 @@ const misa = [
   },
 ]
 
-const otb29Div = $('.otb29.music');
-const otb29 = [
+const otb32Div = $('.otb32.music');
+const otb32 = [
   {
-    title: 'Creo en Jesús',
+    title: 'El Señor Nos Invita',
   },
   {
-    title: 'Salmo 32: Que Tu Misericordia, Señor',
+    title: 'Salmo 145: Alaba, Alma Mía, al Señor',
   },
   {
-    title: 'Canción del Misionero',
+    title: 'Como Busca la Cierva',
   },
   {
-    title: 'Oración de San Francisco',
+    title: 'Eres Tú, Jesús',
   },
   {
-    title: 'Con Amor Jovial',
+    title: 'Un Canto Nuevo',
   }
 ]
 
@@ -150,6 +152,7 @@ function populateTracks(track, div, folder) {
 populateTracks(misa, misaDiv, 'partes-de-la-misa');
 populateTracks(todosSantos, todosSantosDiv, 'todosSantos');
 populateTracks(otb31, otb31Div, 'otb-31');
+populateTracks(otb32, otb32Div, 'otb-32');
 
 $('.audio-control').on("play", function () {
   $('.audio-control').not(this).each(function (index, audio) {

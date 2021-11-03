@@ -20,8 +20,8 @@ $('.selection').on('click', function () {
     $("#todosSantos").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
-  } else if ($(this).hasClass('otb31')) {
-    $("#otb31").removeClass("d-none");
+  } else if ($(this).hasClass('otb33')) {
+    $("#otb33").removeClass("d-none");
   } else if ($(this).hasClass('otb32')) {
     $("#otb32").removeClass("d-none");
   }
@@ -80,41 +80,22 @@ const otb32 = [
   }
 ]
 
-const todosSantosDiv = $('.todosSantos.music');
-const todosSantos = [
+const otb33Div = $('.otb33.music');
+const otb33 = [
   {
-    title: 'Qué Alegría Cuando Me Dijeron',
+    title: 'Vienen con Alegría',
   },
   {
-    title: 'Salmo 23: Ésta Es la Raza',
+    title: 'Salmo 15: Protégeme, Dios Mío',
   },
   {
-    title: 'Pueblo Santo y Elegido',
+    title: 'Oh Señor, Delante de Ti',
   },
   {
-    title: 'Vengan a Mí los Agobiados',
+    title: 'El Que Coma de Este Pan',
   },
   {
-    title: 'Un Pueblo que Camina',
-  },
-]
-
-const otb31Div = $('.otb31.music');
-const otb31 = [
-  {
-    title: 'Tu Palabra Me Da Vida',
-  },
-  {
-    title: 'Salmo 17: Yo Te Amo Señor',
-  },
-  {
-    title: 'Mi Dios y Mi Todo',
-  },
-  {
-    title: 'Señor, Te Adoramos',
-  },
-  {
-    title: 'Yo Canto Amor',
+    title: 'Danos un Corazón',
   },
 ]
 
@@ -150,8 +131,7 @@ function populateTracks(track, div, folder) {
 }
 
 populateTracks(misa, misaDiv, 'partes-de-la-misa');
-populateTracks(todosSantos, todosSantosDiv, 'todosSantos');
-populateTracks(otb31, otb31Div, 'otb-31');
+populateTracks(otb33, otb33Div, 'otb-33');
 populateTracks(otb32, otb32Div, 'otb-32');
 
 $('.audio-control').on("play", function () {

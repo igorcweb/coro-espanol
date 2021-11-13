@@ -22,8 +22,8 @@ $('.selection').on('click', function () {
     $("#misa").removeClass("d-none");
   } else if ($(this).hasClass('otb33')) {
     $("#otb33").removeClass("d-none");
-  } else if ($(this).hasClass('otb32')) {
-    $("#otb32").removeClass("d-none");
+  } else if ($(this).hasClass('ctk')) {
+    $("#ctk").removeClass("d-none");
   }
   $('audio').each(function () {
     $(this)[0].pause()
@@ -61,22 +61,22 @@ const misa = [
   },
 ]
 
-const otb32Div = $('.otb32.music');
-const otb32 = [
+const ctkDiv = $('.ctk.music');
+const ctk = [
   {
-    title: 'El Señor Nos Invita',
+    title: 'Viva Jesús el Rey',
   },
   {
-    title: 'Salmo 145: Alaba, Alma Mía, al Señor',
+    title: 'Salmo 92: Nuestro Señor Jesucristo',
   },
   {
-    title: 'Como Busca la Cierva',
+    title: 'Canto de Toda Criatura',
   },
   {
-    title: 'Eres Tú, Jesús',
+    title: 'Jesús el Buen Pastor',
   },
   {
-    title: 'Un Canto Nuevo',
+    title: 'El Rey de la Gloria',
   }
 ]
 
@@ -132,7 +132,7 @@ function populateTracks(track, div, folder) {
 
 populateTracks(misa, misaDiv, 'partes-de-la-misa');
 populateTracks(otb33, otb33Div, 'otb-33');
-populateTracks(otb32, otb32Div, 'otb-32');
+populateTracks(ctk, ctkDiv, 'ctk');
 
 $('.audio-control').on("play", function () {
   $('.audio-control').not(this).each(function (index, audio) {

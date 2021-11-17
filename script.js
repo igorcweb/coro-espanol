@@ -41,9 +41,9 @@ $(document).on('mouseout', '.selection', function () {
 
 const misaDiv = $('.misa.music');
 const misa = [
-  // {
-  //   title: 'Señor Ten Piedad y Gloria',
-  // },
+  {
+    title: 'Señor Ten Piedad y Gloria',
+  },
   {
     title: 'Kyrie',
   },

@@ -27,26 +27,31 @@
 
 <body>
   <h1 class="text-center text-sm-start mb-4">Coro Español</h1>
-  <div class="buttons mb-2 d-flex gap-4  flex-wrap justify-content-center justify-content-sm-start">
+  <div
+    class="buttons mb-2 d-flex flex-column flex-sm-row gap-4 flex-wrap align-items-center justify-content-center justify-content-sm-start">
     <a class="selection btn btn-lg btn-success misa text-white shadow-sm mb-1" style="width: fit-content"><i
         class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none" aria-hidden="true"></i>La
       Misa</a>
-    <!-- <a class="selection btn btn-lg btn-success otb33 text-white shadow-sm mb-1" style="width: fit-content"><i
-        class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none" aria-hidden="true"></i>Tiempo
-      Ordinario XXXIII</a> -->
     <a class="selection btn btn-lg btn-success ctk text-white shadow-sm mb-1 active" style="width: fit-content"><i
         class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none" aria-hidden="true"></i>
       Cristo Rey</a>
+    <a class="selection btn btn-lg btn-success gracias text-white shadow-sm mb-1" style="width: fit-content"><i
+        class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none" aria-hidden="true"></i>
+      El Día de Acción de Gracias</a>
+    <a class="selection btn btn-lg btn-success a1c text-white shadow-sm mb-1" style="width: fit-content"><i
+        class="fa fa-hand-pointer-o" aria-hidden="true"></i><i class="fa fa-check d-none" aria-hidden="true"></i>
+      Adviento I</a>
   </div>
-  <!-- La Misa -->
+
   <div class="col mt-4">
+    <!-- La Misa -->
     <div class="misa music mb-5 d-none" id="misa"></div>
-
-    <!-- OTB33 -->
-    <!-- <div class="otb33 music mb-5" id="otb33"></div> -->
-
     <!-- Cristo Rey -->
     <div class="ctk music mb-5" id="ctk"></div>
+    <!-- Gracias -->
+    <div class="gracias music mb-5 d-none" id="gracias"></div>
+    <!-- a2c -->
+    <div class="a1c music mb-5 d-none" id="a1c"></div>
   </div>
 
   <!-- Optional JavaScript -->

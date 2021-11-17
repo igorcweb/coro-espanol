@@ -16,12 +16,12 @@ $('.selection').on('click', function () {
   $('.selection').find('.fa-check').addClass('d-none')
   activate();
   $(".music").addClass("d-none");
-  if ($(this).hasClass('todosSantos')) {
-    $("#todosSantos").removeClass("d-none");
+  if ($(this).hasClass('a1c')) {
+    $("#a1c").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
-  } else if ($(this).hasClass('otb33')) {
-    $("#otb33").removeClass("d-none");
+  } else if ($(this).hasClass('gracias')) {
+    $("#gracias").removeClass("d-none");
   } else if ($(this).hasClass('ctk')) {
     $("#ctk").removeClass("d-none");
   }
@@ -80,22 +80,41 @@ const ctk = [
   }
 ]
 
-const otb33Div = $('.otb33.music');
-const otb33 = [
+const graciasDiv = $('.gracias.music');
+const gracias = [
   {
-    title: 'Vienen con Alegría',
+    title: 'Este Es el Dia',
   },
   {
-    title: 'Salmo 15: Protégeme, Dios Mío',
+    title: 'Salmo 144: Bendiceré Tu Nombre',
   },
   {
-    title: 'Oh Señor, Delante de Ti',
+    title: 'Vaso Nuevo',
   },
   {
-    title: 'El Que Coma de Este Pan',
+    title: 'Ven al Banquete',
   },
   {
-    title: 'Danos un Corazón',
+    title: 'Gracias Señor',
+  },
+]
+
+const a1cDiv = $('.a1c.music');
+const a1c = [
+  {
+    title: 'Preparen el Camino',
+  },
+  {
+    title: 'Salmo 24: A Ti, Señor, Levanto Mi Alma',
+  },
+  {
+    title: 'Ven, Señor, No Tardes Más',
+  },
+  {
+    title: 'Celebración de Unidad',
+  },
+  {
+    title: 'Arriba los Corazones',
   },
 ]
 
@@ -114,7 +133,8 @@ function populateTracks(track, div, folder) {
       .replaceAll('í', 'i')
       .replaceAll('ó', 'o')
       .replaceAll('é', 'e')
-      .replaceAll('ú', 'u');
+      .replaceAll('ú', 'u')
+      .replaceAll('á', 'a');
     const file = `./audio/${folder}/${fileName}.m4a`;
     $(div).append(`
     <div class="mb-4">
@@ -131,8 +151,9 @@ function populateTracks(track, div, folder) {
 }
 
 populateTracks(misa, misaDiv, 'partes-de-la-misa');
-populateTracks(otb33, otb33Div, 'otb-33');
+populateTracks(gracias, graciasDiv, 'gracias');
 populateTracks(ctk, ctkDiv, 'ctk');
+populateTracks(a1c, a1cDiv, 'a1c');
 
 $('.audio-control').on("play", function () {
   $('.audio-control').not(this).each(function (index, audio) {

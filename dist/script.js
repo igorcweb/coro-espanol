@@ -138,7 +138,7 @@ function populateTracks(track, div, folder) {
     const file = `./audio/${folder}/${fileName}.m4a`;
     $(div).append(`
     <div class="mb-4">
-      <h4 class="ms-4 ms-sm-2">
+      <h4 class="ms-4 ms-sm-2 text-advent">
         ${track.title}
       </h4>
       <audio controls title="${track.title}" class="audio-control mb-2">

@@ -5,7 +5,15 @@ html, body {
 body {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: #9370db;
+  /* background-color: #9370db; */
+}
+
+.bg-advent {
+  background-color: rgb(3,11,82);
+}
+
+.text-advent {
+  color: #FEFFEA
 }
 
 audio,
@@ -26,6 +34,7 @@ audio {
 .selection {
   position: relative;
   padding-left: 2.5rem;
+  flex-shrink: 0;
 }
 
 .fa {
@@ -39,6 +48,17 @@ audio {
   font-size:  1.2rem !important;
   transition: .2s font-size ease-in-out;
 }
+
+.bg-main {
+  background-color: #6B78B4;
+}
+
+.bg-purple {
+  background-color:  #9370db;
+}
+
+
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {

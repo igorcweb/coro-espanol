@@ -20,10 +20,6 @@ $('.selection').on('click', function () {
     $("#a1c").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
-  } else if ($(this).hasClass('gracias')) {
-    $("#gracias").removeClass("d-none");
-  } else if ($(this).hasClass('ctk')) {
-    $("#ctk").removeClass("d-none");
   }
   $('audio').each(function () {
     $(this)[0].pause()

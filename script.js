@@ -16,10 +16,14 @@ $('.selection').on('click', function () {
   $('.selection').find('.fa-check').addClass('d-none')
   activate();
   $(".music").addClass("d-none");
-  if ($(this).hasClass('a1c')) {
-    $("#a1c").removeClass("d-none");
+  if ($(this).hasClass('a2c')) {
+    $("#a2c").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
+  } else if ($(this).hasClass('ic')) {
+    $("#ic").removeClass("d-none");
+  } else if ($(this).hasClass('a3c')) {
+    $("#a3c").removeClass("d-none");
   }
   $('audio').each(function () {
     $(this)[0].pause()
@@ -57,62 +61,64 @@ const misa = [
   },
 ]
 
-const ctkDiv = $('.ctk.music');
-const ctk = [
+const icDiv = $('.ic.music');
+const ic = [
   {
-    title: 'Viva Jesús el Rey',
+    title: 'Madre de la Iglesia',
   },
   {
-    title: 'Salmo 92: Nuestro Señor Jesucristo',
+    title: 'Salmo 97: Canten al Señor',
   },
   {
-    title: 'Canto de Toda Criatura',
+    title: 'Santa María del Camino',
   },
   {
-    title: 'Jesús el Buen Pastor',
+    title: 'Canto de María',
   },
   {
-    title: 'El Rey de la Gloria',
+    title: 'Adiós, Reina del Cielo',
   }
 ]
 
-const graciasDiv = $('.gracias.music');
-const gracias = [
+
+const a2cDiv = $('.a2c.music');
+const a2c = [
   {
-    title: 'Este Es el Dia',
+    title: 'Vienen con Alegria',
   },
   {
-    title: 'Salmo 144: Bendiceré Tu Nombre',
+    title: 'Salmo 125: El Señor Ha Estado Grande',
   },
   {
-    title: 'Vaso Nuevo',
+    title: 'Amanecerá, el Señor',
   },
   {
-    title: 'Ven al Banquete',
+    title: 'Todos Esperamos de Ti',
   },
   {
-    title: 'Gracias Señor',
+    title: 'Grita, Profeta',
   },
 ]
 
-const a1cDiv = $('.a1c.music');
-const a1c = [
+const a3cDiv = $('.a3c.music');
+const a3c = [
+  {
+    title: 'Que Alegría Cuando Me Dijeron',
+  },
+  {
+    title: 'Isaías 12: Grita de Alegría (Estribillo)',
+  },
+  {
+    title: 'Cristo Que Se Da',
+  },
+  {
+    title: 'Oh Ven, Oh Ven, Emmanuel',
+  },
   {
     title: 'Preparen el Camino',
   },
-  {
-    title: 'Salmo 24: A Ti, Señor, Levanto Mi Alma',
-  },
-  {
-    title: 'Ven, Señor, No Tardes Más',
-  },
-  {
-    title: 'Celebración de Unidad',
-  },
-  {
-    title: 'Arriba los Corazones',
-  },
 ]
+
 
 
 
@@ -130,7 +136,9 @@ function populateTracks(track, div, folder) {
       .replaceAll('ó', 'o')
       .replaceAll('é', 'e')
       .replaceAll('ú', 'u')
-      .replaceAll('á', 'a');
+      .replaceAll('á', 'a')
+      .replaceAll(')', '')
+      .replaceAll('(', '');
     const file = `./audio/${folder}/${fileName}.m4a`;
     $(div).append(`
     <div class="mb-4">
@@ -147,9 +155,9 @@ function populateTracks(track, div, folder) {
 }
 
 populateTracks(misa, misaDiv, 'partes-de-la-misa');
-populateTracks(gracias, graciasDiv, 'gracias');
-populateTracks(ctk, ctkDiv, 'ctk');
-populateTracks(a1c, a1cDiv, 'a1c');
+populateTracks(ic, icDiv, 'ic');
+populateTracks(a2c, a2cDiv, 'a2c');
+populateTracks(a3c, a3cDiv, 'a3c');
 
 $('.audio-control').on("play", function () {
   $('.audio-control').not(this).each(function (index, audio) {

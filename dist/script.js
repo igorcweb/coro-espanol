@@ -16,8 +16,8 @@ $('.selection').on('click', function () {
   $('.selection').find('.fa-check').addClass('d-none')
   activate();
   $(".music").addClass("d-none");
-  if ($(this).hasClass('a2c')) {
-    $("#a2c").removeClass("d-none");
+  if ($(this).hasClass('a4c')) {
+    $("#a4c").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
   } else if ($(this).hasClass('ic')) {
@@ -61,42 +61,25 @@ const misa = [
   },
 ]
 
-const icDiv = $('.ic.music');
-const ic = [
+
+
+
+const a4cDiv = $('.a4c.music');
+const a4c = [
+  {
+    title: 'Alegría de Vivir',
+  },
+  {
+    title: 'Salmo 79: Señor, Dios nuestro restáuranos',
+  },
+  {
+    title: 'Quiero Decir que Sí',
+  },
+  {
+    title: 'Amanecerá el Señor',
+  },
   {
     title: 'Madre de la Iglesia',
-  },
-  {
-    title: 'Salmo 97: Canten al Señor',
-  },
-  {
-    title: 'Santa María del Camino',
-  },
-  {
-    title: 'Canto de María',
-  },
-  {
-    title: 'Adiós, Reina del Cielo',
-  }
-]
-
-
-const a2cDiv = $('.a2c.music');
-const a2c = [
-  {
-    title: 'Vienen con Alegria',
-  },
-  {
-    title: 'Salmo 125: El Señor Ha Estado Grande',
-  },
-  {
-    title: 'Amanecerá, el Señor',
-  },
-  {
-    title: 'Todos Esperamos de Ti',
-  },
-  {
-    title: 'Grita, Profeta',
   },
 ]
 
@@ -155,9 +138,7 @@ function populateTracks(track, div, folder) {
 }
 
 populateTracks(misa, misaDiv, 'partes-de-la-misa');
-populateTracks(ic, icDiv, 'ic');
-populateTracks(a2c, a2cDiv, 'a2c');
-populateTracks(a3c, a3cDiv, 'a3c');
+populateTracks(a4c, a4cDiv, 'a4c');
 
 $('.audio-control').on("play", function () {
   $('.audio-control').not(this).each(function (index, audio) {

@@ -20,8 +20,8 @@ $('.selection').on('click', function () {
     $("#a4c").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
-  } else if ($(this).hasClass('ic')) {
-    $("#ic").removeClass("d-none");
+  } else if ($(this).hasClass('cd')) {
+    $("#cd").removeClass("d-none");
   } else if ($(this).hasClass('a3c')) {
     $("#a3c").removeClass("d-none");
   }
@@ -83,23 +83,13 @@ const a4c = [
   },
 ]
 
-const a3cDiv = $('.a3c.music');
-const a3c = [
+const cdDiv = $('.cd.music');
+const cd = [
+
   {
-    title: 'Que Alegría Cuando Me Dijeron',
+    title: 'Salmo 97: Los Confines de la Tierra',
   },
-  {
-    title: 'Isaías 12: Grita de Alegría (Estribillo)',
-  },
-  {
-    title: 'Cristo Que Se Da',
-  },
-  {
-    title: 'Oh Ven, Oh Ven, Emmanuel',
-  },
-  {
-    title: 'Preparen el Camino',
-  },
+
 ]
 
 
@@ -139,6 +129,7 @@ function populateTracks(track, div, folder) {
 
 populateTracks(misa, misaDiv, 'partes-de-la-misa');
 populateTracks(a4c, a4cDiv, 'a4c');
+populateTracks(cd, cdDiv, 'cd');
 
 $('.audio-control').on("play", function () {
   $('.audio-control').not(this).each(function (index, audio) {

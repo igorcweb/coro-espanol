@@ -68,7 +68,7 @@ const hfDiv = $('.hf.music');
 const hf = [
 
   {
-    title: 'Salmo 127 - Dichoso El Que Teme al Señor',
+    title: 'Salmo 127: Dichoso El Que Teme al Señor',
   },
 
 ]

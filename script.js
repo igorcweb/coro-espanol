@@ -20,10 +20,10 @@ $('.selection').on('click', function () {
     $("#a4c").removeClass("d-none");
   } else if ($(this).hasClass('misa')) {
     $("#misa").removeClass("d-none");
-  } else if ($(this).hasClass('cd')) {
-    $("#cd").removeClass("d-none");
-  } else if ($(this).hasClass('hf')) {
-    $("#hf").removeClass("d-none");
+  } else if ($(this).hasClass('th')) {
+    $("#th").removeClass("d-none");
+  } else if ($(this).hasClass('aa1')) {
+    $("#aa1").removeClass("d-none");
   }
   $('audio').each(function () {
     $(this)[0].pause()
@@ -41,12 +41,12 @@ $(document).on('mouseout', '.selection', function () {
 
 const misaDiv = $('.misa.music');
 const misa = [
-  {
-    title: 'Señor Ten Piedad y Gloria',
-  },
   // {
-  //   title: 'Kyrie',
+  //   title: 'Señor Ten Piedad y Gloria',
   // },
+  {
+    title: 'Kyrie',
+  },
   {
     title: 'Santo',
   },
@@ -64,26 +64,47 @@ const misa = [
 
 
 
-const hfDiv = $('.hf.music');
-const hf = [
+const thDiv = $('.th.music');
+const th = [
 
   {
-    title: 'Salmo 127: Dichoso El Que Teme al Señor',
+    title: 'Este Es el Dia',
+  },
+  {
+    title: 'Salmo 144: Bendiceré Tu Nombre',
+  },
+  {
+    title: 'Vaso Nuevo',
+  },
+  {
+    title: 'Ven al Banquete',
+  },
+  {
+    title: 'Gracias Señor',
   },
 
 ]
 
-const cdDiv = $('.cd.music');
-const cd = [
+const aa1Div = $('.aa1.music');
+const aa1 = [
 
   {
-    title: 'Salmo 97: Los Confines de la Tierra',
+    title: 'Preparen el Camino',
+  },
+  {
+    title: 'Salmo 121: Qué Alegría Cuando Me Dijeron',
+  },
+  {
+    title: 'Amanecerá el Señor',
+  },
+  {
+    title: 'Danos Tu Luz',
+  },
+  {
+    title: 'Levántate',
   },
 
 ]
-
-
-
 
 function populateTracks(track, div, folder) {
   $.each(track, (i, track) => {
@@ -117,9 +138,10 @@ function populateTracks(track, div, folder) {
   })
 }
 
-populateTracks(misa, misaDiv, 'partes-de-la-misa');
-populateTracks(hf, hfDiv, 'hf');
-populateTracks(cd, cdDiv, 'cd');
+populateTracks(misa, misaDiv, 'misa');
+
+populateTracks(th, thDiv, 'th');
+populateTracks(aa1, aa1Div, 'aa1');
 
 $('.audio-control').on("play", function () {
   $('.audio-control').not(this).each(function (index, audio) {
